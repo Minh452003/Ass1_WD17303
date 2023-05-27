@@ -1,0 +1,17 @@
+<div class="container">
+    <form (ngSubmit)="onHandeAdd()" [formGroup]="productForm">
+        <div class="mb-3">
+            <label for="">Name</label>
+            <input type="text" class="form-control" formControlName="name">
+        </div>
+        <div class="mb-3">
+            <label for="">Price</label>
+            <input type="number" class="form-control" formControlName="price">
+        </div>
+        <div class="mb-3">
+            <label for="">Image</label>
+            <input type="text" class="form-control" formControlName="image">
+        </div>
+        <button class="btn btn-danger" type="submit" [disabled]="!productForm.valid">ADD PRODUCT</button>
+    </form>
+</div>

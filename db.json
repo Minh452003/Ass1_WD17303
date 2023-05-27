@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "name": "Sản phẩm 2",
+      "price": 2000,
+      "image": "https://picsum.photos/150/150",
+      "id": 2
+    },
+    {
+      "name": "Sản phẩm 3",
+      "price": 2000,
+      "image": "https://picsum.photos/150/150",
+      "id": 3
+    },
+    {
+      "name": "Sản phẩm 4",
+      "price": 2000,
+      "image": "https://picsum.photos/150/150",
+      "id": 4
+    },
+    {
+      "name": "Sản phẩm 5",
+      "price": 2000,
+      "image": "https://picsum.photos/150/150",
+      "id": 5
+    },
+    {
+      "name": "Sản phẩm 5",
+      "price": 2000,
+      "image": "https://picsum.photos/150/150",
+      "id": 6
+    },
+    {
+      "name": "Sản phẩm 5 update 1",
+      "price": 1234,
+      "image": "https://picsum.photos/150/150",
+      "id": 7
+    }
+  ]
+}
