@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { ProductService } from "src/app/pages/services/product.service"
-import { Router } from '@angular/router';
+import { ProductService } from 'src/app/services/product.service';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { IProduct } from 'src/app/interfaces/product';
 @Component({
   selector: 'app-product-add',
@@ -10,16 +10,17 @@ import { IProduct } from 'src/app/interfaces/product';
 })
 export class ProductAddComponent {
   productForm = this.FormBuilder.group({
-    name: ['', [Validators.required, Validators.minLength(4)]],
+    name: ['', [Validators.required, Validators.minLength(2)]],
     price: [0],
     image: ['']
   })
   constructor(
-    private FormBuilder: FormBuilder,
     private ProductService: ProductService,
+    private FormBuilder: FormBuilder,
     private Router: Router
   ) { }
-  onHandeAdd() {
+
+  onHandleAdd() {
     if (this.productForm.valid) {
       const product: IProduct = {
         name: this.productForm.value.name || '',
@@ -31,4 +32,5 @@ export class ProductAddComponent {
       })
     }
   }
+
 }

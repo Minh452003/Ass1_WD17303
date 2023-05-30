@@ -10,6 +10,7 @@ import { ProductUpdateComponent } from './pages/admin/product-update/product-upd
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 
+
 const routes: Routes = [
   {
     path: '', component: BaseLayoutComponent, children: [
@@ -26,7 +27,7 @@ const routes: Routes = [
       { path: 'products/:id/update', component: ProductUpdateComponent },
 
     ]
-  },
+  }
 ];
 
 @NgModule({

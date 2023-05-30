@@ -1,17 +1,17 @@
 <div class="container">
-    <form (ngSubmit)="onHandeUpdate()" [formGroup]="productForm">
+    <form (ngSubmit)="onHandleUpdate()" [formGroup]="productForm">
         <div class="mb-3">
-            <label for="">Name</label>
+            <label>Name</label>
             <input type="text" class="form-control" formControlName="name">
         </div>
         <div class="mb-3">
-            <label for="">Price</label>
+            <label>Price</label>
             <input type="number" class="form-control" formControlName="price">
         </div>
         <div class="mb-3">
-            <label for="">Image</label>
+            <label>Image</label>
             <input type="text" class="form-control" formControlName="image">
         </div>
-        <button class="btn btn-danger" type="submit" [disabled]="!productForm.valid">UPDATE PRODUCT</button>
+        <button type="submit" class="btn btn-danger" [disabled]="!productForm.valid">UPDATE PRODUCT</button>
     </form>
 </div>

@@ -19,21 +19,15 @@
       "id": 4
     },
     {
-      "name": "Sản phẩm 5",
-      "price": 2000,
-      "image": "https://picsum.photos/150/150",
-      "id": 5
-    },
-    {
-      "name": "Sản phẩm 5",
-      "price": 2000,
-      "image": "https://picsum.photos/150/150",
+      "name": "Sản phẩm 1 update",
+      "price": 1234,
+      "image": "https://cdn.sforum.vn/sforum/wp-content/uploads/2018/11/3-8.png",
       "id": 6
     },
     {
-      "name": "Sản phẩm 5 update 1",
+      "name": "minh",
       "price": 1234,
-      "image": "https://picsum.photos/150/150",
+      "image": "a",
       "id": 7
     }
   ]

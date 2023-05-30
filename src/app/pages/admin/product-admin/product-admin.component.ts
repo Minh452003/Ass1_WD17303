@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { IProduct } from 'src/app/interfaces/product';
-import { ProductService } from "src/app/pages/services/product.service"
+import { ProductService } from 'src/app/services/product.service';
+
 @Component({
   selector: 'app-product-admin',
   templateUrl: './product-admin.component.html',
@@ -10,20 +10,20 @@ import { ProductService } from "src/app/pages/services/product.service"
 export class ProductAdminComponent {
   products!: IProduct[];
   constructor(
-    private ProductService: ProductService,
-    private Router: Router
+    private ProductService: ProductService
   ) {
     this.ProductService.getProducts().subscribe(data => {
       this.products = data
     }, error => {
       console.log(error.message);
-
     })
   }
   removeItem(id: any) {
-    this.ProductService.removeProduct(id).subscribe(product => {
-      const newProducts = this.products.filter((product) => product.id != id);
-      this.products = newProducts
-    })
+    if (window.confirm("Bạn chắc chắn chứ?") == true) {
+      this.ProductService.removeProduct(id).subscribe(product => {
+        const newProducts = this.products.filter((product) => product.id != id);
+        this.products = newProducts
+      })
+    }
   }
 }

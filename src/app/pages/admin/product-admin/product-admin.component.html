@@ -1,4 +1,4 @@
-<div class="contaner">
+<div class="container">
     <button class="btn btn-danger" routerLink="/admin/products/add">ADD PRODUCT</button>
     <table class="table table-bordered">
         <thead>
@@ -7,7 +7,7 @@
                 <th>Name</th>
                 <th>Price</th>
                 <th>Image</th>
-                <th>Action</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -18,7 +18,7 @@
                 <td><img src="{{product.image}}" alt="" width="50"></td>
                 <td>
                     <button class="btn btn-primary" (click)="removeItem(product.id)">Delete</button>
-                    <button class="btn btn-danger" routerLink="/admin/products/{{product.id}}/update">Update</button>
+                    <button class="btn btn-danger" routerLink="/admin/products/{{product.id}}/update">Edit</button>
                 </td>
             </tr>
         </tbody>
